@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk APRI JONITA YENDAAA</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffe6f0;
+            text-align: center;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3rem;
+            margin: 20px 0;
+            text-shadow: 2px 2px #ffb6c1;
+        }
+        p {
+            color: #ff1493;
+            font-size: 1.5rem;
+            line-height: 1.8;
+            padding: 0 15px;
+        }
+        .love {
+            font-size: 2rem;
+            animation: fly 5s infinite;
+            position: fixed;
+        }
+        @keyframes fly {
+            0% { transform: translate(0, 0); opacity: 1; }
+            100% { transform: translate(100vw, -100vh); opacity: 0; }
+        }
+        iframe {
+            margin-top: 20px;
+            border: none;
+            border-radius: 15px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <h1>APRI JONITA YENDAAA ❤️ CINTAKUUUU</h1>
+    <p>
+        Aku mencintaimu lebih dari bintang mencintai malam, lebih dari bulan mencintai gelap,
+        lebih dari daun mencintai angin. Kamu adalah alasan aku tersenyum setiap hari,
+        bahkan saat hujan deras mencoba menyelimuti hati.
+    </p>
+    <p>
+        Apri Jonita Yendaaa, kamu adalah embun pagi yang menyejukkan, mentari yang menghangatkan,
+        dan pelangi yang selalu aku nantikan setelah badai. Kamu adalah lagu yang indah di dalam hatiku
+        yang terus berulang, tanpa pernah bosan didengar. 🎵❤️
+    </p>
+    <p>
+        BAYU RAMAZANDI SANGAT MENCINTAI APRI JONITA YENDA!!!
+        Tiap detik tanpamu rasanya hampa, tiap menit bersamamu terasa seperti surga.
+        Dunia ini menjadi lebih cerah hanya karena kehadiranmu. Semesta ini terlalu kecil
+        untuk menggambarkan besarnya cintaku padamu. Aku mau kamu tahu, hatiku adalah milikmu, selamanya! 💖
+    </p>
+
+    <!-- Buttons with Surprises -->
+    <button onclick="alert('Aku mencintaimu sebesar langit! 🌌')">Klik untuk Kejutan 1</button>
+    <button onclick="document.body.style.backgroundColor = '#ffd1dc'; alert('Dunia berubah warna karenamu! 🌈')">Klik untuk Kejutan 2</button>
+    <button onclick="showHiddenMessage()">Klik untuk Kejutan 3</button>
+
+    <!-- Hidden Message -->
+    <p id="hidden-message" style="display: none; font-size: 2rem; color: #ff69b4;">
+        Kamu adalah segalanya untukku! 😘❤️
+    </p>
+
+    <script>
+        function showHiddenMessage() {
+            const message = document.getElementById('hidden-message');
+            message.style.display = 'block';
+            message.textContent += ' Bayu akan selalu mencintaimu!';
+        }
+    </script>
+
+    <!-- Video YouTube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/s6H6ffS6zJI" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+
+    <!-- Love Icons -->
+    <div class="love" style="top: 10%; left: 15%;">❤️</div>
+    <div class="love" style="top: 30%; left: 40%;">💖</div>
+    <div class="love" style="top: 50%; left: 20%;">💕</div>
+    <div class="love" style="top: 70%; left: 60%;">💘</div>
+    <div class="love" style="top: 20%; left: 80%;">😍</div>
+
+    <script>
+        // Generate random love flying hearts
+        const createHeart = () => {
+            const heart = document.createElement('div');
+            heart.classList.add('love');
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            heart.textContent = '❤️';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        };
+
+        setInterval(createHeart, 300);
+    </script>
+</body>
+</html>
